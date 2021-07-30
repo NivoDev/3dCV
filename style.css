@@ -1,0 +1,123 @@
+@import url("https://use.typekit.net/jmk3xov.css");
+html body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* background: url(space2.jpg) no-repeat center center;
+  background-size: cover; */
+}
+canvas {
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  display: block;
+}
+
+:root {
+  --dark-bg: rgba(15, 15, 15, 0.95);
+  --spacing: 200px;
+  font-family: brandon-grotesque, sans-serif;
+  font-style: normal;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--spacing);
+  align-items: center;
+  color: white;
+  z-index: 99;
+}
+
+h1,
+h2,
+h3,
+a,
+blockquote {
+  font-family: elevon, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  max-width: max-content;
+}
+header h1 {
+  padding: 15px;
+}
+header img {
+  width: 350px;
+}
+blockquote {
+  max-width: max-content;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: var(--spacing);
+  font-size: 1.5rem;
+}
+header h1 {
+  background: var(--dark-bg);
+}
+
+section {
+  position: relative;
+  padding: 1rem;
+  max-width: 70%;
+  background: var(--dark-bg);
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing);
+}
+
+blockquote {
+  width: 100%;
+}
+
+blockquote p {
+  color: black;
+  background-color: white;
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+blockquote a {
+  color: black;
+  background-color: white;
+  font-size: 3rem;
+  line-height: 1;
+}
+blockquote a:hover {
+  color: white;
+  background-color: black;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+.downloadCv a {
+  font-size: 2rem;
+}
+.downloadCv {
+  text-align: center;
+}
