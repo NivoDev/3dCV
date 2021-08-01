@@ -36,6 +36,8 @@ canvas {
   text-decoration: none;
   border-radius: 35px;
   display: none;
+  -webkit-highlight-color: transparent;
+
   -webkit-transition: all 0.5s linear;
   -moz-transition: all 0.5s ease;
   -ms-transition: all 0.5s ease;
