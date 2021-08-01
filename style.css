@@ -1,6 +1,6 @@
 @import url("https://use.typekit.net/jmk3xov.css");
 html body {
-  -webkit-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent;
 
   margin: 0;
   padding: 0;
@@ -36,7 +36,7 @@ canvas {
   text-decoration: none;
   border-radius: 35px;
   display: none;
-  -webkit-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent;
 
   -webkit-transition: all 0.5s linear;
   -moz-transition: all 0.5s ease;
