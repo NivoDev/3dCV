@@ -25,6 +25,7 @@ canvas {
   opacity: 0.6;
   position: fixed;
   bottom: 20px;
+  cursor: pointer;
   right: 20px;
   background: #ff6347;
   width: 70px;
@@ -50,14 +51,26 @@ canvas {
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-#return-to-top:hover {
-  opacity: 1;
-
-  background: #fff;
+@media (min-width: 768px) {
+  #return-to-top:hover {
+    opacity: 1;
+    background: #fff;
+  }
+  #return-to-top:hover i {
+    color: #ff6347;
+    bottom: 5px;
+  }
 }
-#return-to-top:hover i {
-  color: #ff6347;
-  bottom: 5px;
+
+@media (hover: none) {
+  #return-to-top:hover {
+    opacity: 1;
+    background: #fff;
+  }
+  #return-to-top:hover i {
+    color: #ff6347;
+    bottom: 5px;
+  }
 }
 :root {
   --dark-bg: rgba(15, 15, 15, 0.95);
