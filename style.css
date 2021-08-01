@@ -9,6 +9,7 @@ html body {
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
+  scroll-behavior: smooth;
   /* background: url(space2.jpg) no-repeat center center;
   background-size: cover; */
 }
@@ -20,10 +21,47 @@ canvas {
   position: fixed;
   display: block;
 }
+#return-to-top {
+  opacity: 0.6;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #ff6347;
+  width: 70px;
+  height: 70px;
+  display: block;
+  text-decoration: none;
+  border-radius: 35px;
+  display: none;
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
 
+#return-to-top i {
+  color: #fff;
+  position: relative;
+  font-size: 25px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+#return-to-top:hover {
+  opacity: 1;
+
+  background: #fff;
+}
+#return-to-top:hover i {
+  color: #ff6347;
+  bottom: 5px;
+}
 :root {
   --dark-bg: rgba(15, 15, 15, 0.95);
-  --spacing: 200px;
+  --spacing: 80px;
   font-family: brandon-grotesque, sans-serif;
   font-style: normal;
 }
@@ -38,13 +76,10 @@ main {
   z-index: 99;
 }
 
-h1,
-h2,
-h3,
 a,
 blockquote {
   font-family: elevon, sans-serif;
-  font-weight: 700;
+  font-weight: 300;
   font-style: normal;
   max-width: max-content;
 }
