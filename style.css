@@ -1,5 +1,7 @@
 @import url("https://use.typekit.net/jmk3xov.css");
 html body {
+  -webkit-highlight-color: transparent;
+
   margin: 0;
   padding: 0;
   width: 100vw;
